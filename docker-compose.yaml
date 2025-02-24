@@ -3,12 +3,12 @@ version: "3.8"
 services:
   postgres:
     image: postgres
-    container_name: sales
+    container_name: dbtest
     restart: always
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: sales
+      POSTGRES_DB: dbtest
     ports:
       - "5432:5432"
     healthcheck:
@@ -29,4 +29,4 @@ services:
       POSTGRES_PORT: 5432
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: sales
+      POSTGRES_DB: dbtest
